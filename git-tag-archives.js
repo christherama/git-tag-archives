@@ -1,9 +1,10 @@
 var https = require('https');
 var fs = require('fs');
 var mkdirp = require('mkdirp');
+var config = require('./config');
 
-var GITHUB_USERNAME = 'your github username here';
-var GITHUB_TOKEN = 'your github person token here';
+var GITHUB_USERNAME = config.github.username;
+var GITHUB_TOKEN = config.github.token;
 
 if(process.argv.length < 3 || process.argv[2].split("/").length != 2) {
 	console.error("\nPlease specify the full user/repo name, e.g.\n\tnode git-tag-archives.js user/repo\n");
