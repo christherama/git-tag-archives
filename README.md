@@ -11,4 +11,4 @@ To execute the script, open a terminal window and navigate to the *git-tag-archi
 
      node git-tag-archives.js angular/material
 
- After running this command, you should see a series of ZIP files downloaded to your *~/Downloads~* directory - one for each tag in the remote repo.
+ After running this command, you should see a series of ZIP files downloaded to your *~/Downloads* directory - one for each tag in the remote repo.
